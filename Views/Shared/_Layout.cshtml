@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar sticky-top fixed-top navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3 fixed-top " style="background-color: #87413f; position: fixed; top: 0; width: 100%;">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center mb-2 mb-lg-0" asp-area="" asp-controller="Home" asp-action="Index">Classic Ratna</a>
+                <a class="navbar-brand d-flex align-items-center mb-2 mb-lg-0" asp-area="" asp-controller="Home" asp-action="Index">Jewels</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,15 +54,15 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-light nav-link dropdown-toggle px-2" data-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Account">My Account</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li> <a class="nav-link text-dark" asp-area="Cart" asp-controller="Home" asp-action="Wishlist"> My Wishlist</a></li>
-
-                                <li>   <a class="nav-link text-dark" asp-area="Cart" asp-controller="Cart" asp-action="Orders">My Orders</a></li>
-
-                            </ul>
-                        </li>
+                        @* <li class="nav-item dropdown"> *@
+                        @*     <a class="nav-link text-light nav-link dropdown-toggle px-2" data-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Account">My Account</a> *@
+                        @*     <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> *@
+                        @*         <li> <a class="nav-link text-dark" asp-area="Cart" asp-controller="Home" asp-action="Wishlist"> My Wishlist</a></li> *@
+                        @* *@
+                        @*         <li>   <a class="nav-link text-dark" asp-area="Cart" asp-controller="Cart" asp-action="Orders">My Orders</a></li> *@
+                        @* *@
+                        @*     </ul> *@
+                        @* </li> *@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
                         </li>
@@ -82,30 +82,30 @@
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
                             <li>
-                                <a class="nav-link text-light" asp-area="Cart" asp-controller="Cart" asp-action="Cart"><img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" width="50px" height="40px" /></a>
+                                @* <a class="nav-link text-light" asp-area="Cart" asp-controller="Cart" asp-action="Cart"><img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" width="50px" height="40px" /></a> *@
                             </li>
 
                             @if (User.Identity.IsAuthenticated)
                             {
 
-                                <a class="nav-link text-light"> Hello,@User.Identity.Name</a>
-                                <li>
-                                    <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
-                                </li>
+                                @* <a class="nav-link text-light"> Hello,@User.Identity.Name</a> *@
+                                @* <li> *@
+                                @*     <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a> *@
+                                @* </li> *@
 
                             }
 
                             else
                             {
-                                <li>
-                                    <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                                </li>
-
-
-
-                                <li>
-                                    <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Register">Signup</a>
-                                </li>
+                                @* <li> *@
+                                @*     <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Login">Login</a> *@
+                                @* </li> *@
+                                @* *@
+                                @* *@
+                                @* *@
+                                @* <li> *@
+                                @*     <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Register">Signup</a> *@
+                                @* </li> *@
                             }
                         </ul>
 
@@ -166,7 +166,7 @@
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #c69d99; height: 2px" />
                         <p>
-                            Designed and Developed by POD-1 Group-11
+                            TBD
                         </p>
                         <p>
                             <h6>
@@ -228,9 +228,9 @@
                         <h6 class="text-uppercase fw-bold">Contact</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #c69d99; height: 2px" />
-                        <p><i class="fa fa-home mr-3"></i> Dehradun, Uttarakhand, India</p>
-                        <p><i class="fa fa-envelope mr-3"></i> classicratna.inc@gmail.com</p>
-                        <p><i class="fa fa-phone mr-3"></i>+91-987*******</p>
+                        <p><i class="fa fa-home mr-3"></i> Raichur, Karnataka, India</p>
+                        <p><i class="fa fa-envelope mr-3"></i> test@gmail.com</p>
+                        <p><i class="fa fa-phone mr-3"></i>+91-9164*****</p>
 
                     </div>
                     <!-- Grid column -->
@@ -243,8 +243,7 @@
         <!-- Copyright -->
         <div class="text-center p-3"
              style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2022 Copyright:
-            <a class="text-dark" href="">ClassicRatna.com</a>
+            © 2025 Copyright:
         </div>
         <!-- Copyright -->
     </footer>
